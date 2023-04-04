@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-void main()
-{
+int main(){
     //1. Bài 1: Nhập vào 3 số nguyên a, b, c.
     int a;
     int b;
@@ -14,23 +13,21 @@ void main()
     printf("Nhap c:");
     scanf("%d",&c);
     
-    //● Tạo menu cho các yêu cầu trên
+     //● Tạo menu cho các yêu cầu trên
     // Hiển thị menu -> Cho người dùng lựa chọn chức năng -> Thực hiện chức năng tương ứng
     //
-    do
-    {
+    do{
         printf("=========MENU=========");
         printf("1. yc 1");
         printf("2. yc 2");
         printf("0. Thoat");
         printf("Chon chuc nang: ");
-        //
+
         char luaChon;
-        scanf("%s", &luaChon);
-        //
-        switch(luaChon)
-        {
-            case "1":
+        scanf("%c", &luaChon);
+    
+        switch(luaChon){
+            case '1':{
                 //● YC1: In ra tổng, hiệu, tích, thương của 3 số.
                 int tong = a+b+c;
                 int hieu = a-b-c;
@@ -42,20 +39,25 @@ void main()
                 printf("Tich: %d\n", tich);
                 printf("Thuong: %f", thuong);
                 break;
-            case "2":
-                //● YC2: Tính (a + b) * c và in ra màn hình.
+            }
+                
+            case '2':{
+                 //● YC2: Tính (a + b) * c và in ra màn hình.
                 int congThuc = (a + b) * c;
                 printf("Cong thuc: %d", congThuc);
                 break;
-            case "0":
+            }
+            case '0':{
                 printf("BAN DA THOAT !");
-                return;
-            default:
+                break;
+            }
+            default:{
                 printf("Nhap lai. Danh sach chuc nang 0-2");
                 break;
+            }
         }
 
-    }while(true);
+    }while(1);
     
-    return;
+    return 0;
 }

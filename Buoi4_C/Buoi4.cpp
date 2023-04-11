@@ -5,7 +5,6 @@
 //4. B�i 4: Nhap v�o so n. T�nh tong c�c so le tu 0 toi n
 //5. B�i 5: Nhap v�o so n. T�nh tich c�c so le tu 1 toi n
 //6. Bai 6: Nhap v�o so n. �em xem c� bao nhi�u so chan tu 0 toi n
-
 #include<stdio.h>
 void KiemTraChanLe(int soCanKiemTra){
 	if(soCanKiemTra % 2 == 0)

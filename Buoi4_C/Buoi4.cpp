@@ -1,10 +1,10 @@
 //Buoi 4: Su dung HAM
-//1. Bài 1: Nhap vào so n. Viet hàm kiem tra n là so chan hay so le
-//2. Bài 2: Nhap vào so a,b và ký tu +,-,*,/. Viet hàm thuc hien phép tính tuong ung
-//3. Bài 3: Nhap vào tháng, nam. Viet hàm in ra so ngay cua thang
-//4. Bài 4: Nhap vào so n. Tính tong các so le tu 0 toi n
-//5. Bài 5: Nhap vào so n. Tính tich các so le tu 1 toi n
-//6. Bài 6: Nhap vào so n. Ðem xem có bao nhiêu so chan tu 0 toi n
+//1. Bï¿½i 1: Nhap vï¿½o so n. Viet hï¿½m kiem tra n lï¿½ so chan hay so le
+//2. Bï¿½i 2: Nhap vï¿½o so a,b vï¿½ kï¿½ tu +,-,*,/. Viet hï¿½m thuc hien phï¿½p tï¿½nh tuong ung
+//3. Bï¿½i 3: Nhap vï¿½o thï¿½ng, nam. Viet hï¿½m in ra so ngay cua thang
+//4. Bï¿½i 4: Nhap vï¿½o so n. Tï¿½nh tong cï¿½c so le tu 0 toi n
+//5. Bï¿½i 5: Nhap vï¿½o so n. Tï¿½nh tich cï¿½c so le tu 1 toi n
+//6. Bai 6: Nhap vï¿½o so n. ï¿½em xem cï¿½ bao nhiï¿½u so chan tu 0 toi n
 
 #include<stdio.h>
 void KiemTraChanLe(int soCanKiemTra){
@@ -61,9 +61,9 @@ int KiemTraSoNgay(int thang, int nam) // bat buoc co return
 	if(thang == 2)
 	{
 		// Kiem tra nam nhuan
-		//Nh?ng nam chia h?t cho 4 mà không chia h?t cho 100 là nam nhu?n
-		//Nh?ng nam chia h?t cho 100 mà không chia h?t cho 400 thì KHÔNG PH?I là nam nhu?n
-		//Nh?ng nam chia h?t d?ng th?i cho 100 và 400 là nam nhu?n
+		//Nh?ng nam chia h?t cho 4 mï¿½ khï¿½ng chia h?t cho 100 lï¿½ nam nhu?n
+		//Nh?ng nam chia h?t cho 100 mï¿½ khï¿½ng chia h?t cho 400 thï¿½ KHï¿½NG PH?I lï¿½ nam nhu?n
+		//Nh?ng nam chia h?t d?ng th?i cho 100 vï¿½ 400 lï¿½ nam nhu?n
 		if((nam % 4 == 0 && nam % 100 != 0) || (nam % 400 == 0 && nam % 100 == 0))
 		{
 			return 29;
@@ -162,15 +162,15 @@ int main(){
 		switch(luaChon)
 		{
 			case 1:
-				// Nhap vào so n. Viet hàm kiem tra n là so chan hay so le
+				// Nhap vï¿½o so n. Viet hï¿½m kiem tra n lï¿½ so chan hay so le
 				printf("Nhap n:");
 				scanf(" %d", &nBai1);
 				
 				KiemTraChanLe(nBai1); // Goi ham kiem tra
 				break;
 			case 2:
-				//Nhap vào so a,b và ký tu +,-,*,/. 
-				//Viet hàm thuc hien phép tính tuong ung
+				//Nhap vï¿½o so a,b vï¿½ kï¿½ tu +,-,*,/. 
+				//Viet hï¿½m thuc hien phï¿½p tï¿½nh tuong ung
 				printf("Nhap a:");
 				scanf(" %d", &a);
 				printf("\nNhap b:");
@@ -189,7 +189,7 @@ int main(){
 				}
 				break;
 			case 3:
-				// Nhap vào tháng, nam. Viet hàm in ra so ngay cua thang
+				// Nhap vï¿½o thï¿½ng, nam. Viet hï¿½m in ra so ngay cua thang
 				printf("Nhap thang:");
 				scanf(" %d", &thang);
 				printf("\nNhap nam:");
@@ -206,7 +206,7 @@ int main(){
 				}
 				break;		
 			case 4:
-				// Nhap vào so n. Tính tong các so le tu 0 toi n
+				// Nhap vï¿½o so n. Tï¿½nh tong cï¿½c so le tu 0 toi n
 				printf("Nhap n:");
 				scanf(" %d", &nBai4);
 				
@@ -222,7 +222,7 @@ int main(){
 				}
 				break;		
 			case 5:
-				// Nhap vào so n. Tính tich các so le tu 0 toi n
+				// Nhap vï¿½o so n. Tï¿½nh tich cï¿½c so le tu 0 toi n
 				printf("Nhap n:");
 				scanf(" %d", &nBai5);
 				
@@ -238,7 +238,7 @@ int main(){
 				}
 				break;	
 			case 6:
-				// Nhap vào so n. Ðem xem có bao nhiêu so chan tu 0 toi n
+				// Nhap vï¿½o so n. ï¿½em xem cï¿½ bao nhiï¿½u so chan tu 0 toi n
 				printf("Nhap n:");
 				scanf(" %d", &nBai6);
 				
